@@ -2,8 +2,8 @@
 
 Convert any text to pdf file using this package !
 
-![Image](https://github.com/sivaprasadnk/Text2Pdf/blob/main/screenshots/screenshot1.jpeg)
-![Image](https://github.com/sivaprasadnk/Text2Pdf/blob/main/screenshots/screenshot2.jpeg)
+![Image](https://github.com/sivaprasadnk/Text2Pdf/blob/master/screenshots/screenshot1.jpeg)
+![Image](https://github.com/sivaprasadnk/Text2Pdf/blob/master/screenshots/screenshot2.jpeg)
 ## Getting Started
 
 Add this to your package's `pubspec.yaml` file
