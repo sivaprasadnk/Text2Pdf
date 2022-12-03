@@ -1,0 +1,37 @@
+name: text2pdf
+description: Convert any text to pdf file using this package !
+version: 0.0.1
+homepage: null
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  open_filex: ^4.3.1
+  path_provider: ^2.0.11
+  pdf: ^3.8.4
+  printing: ^5.9.3
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
