@@ -13,14 +13,17 @@ class Text2Pdf {
   ///
   /// [content] parameter cannot be null. It sets tha pdf content.
   ///
-  /// [outputFilePath] paramater is optional. Sets the path of generated Pdf File.
+  /// [outputFilePath] paramater is optional, with fileName and .pdf extension. Sets the path of generated Pdf File.
   ///
   /// [pageMargin] paramater is optional. Sets the margin around pdf file. Defaults to 20
+  ///
+  /// [openFile] parameter is optional, to open file after pdf generation. Defaults to true.
 
   static Future<void> generatePdf(
     String content, {
     String? outputFilePath,
     double? pageMargin,
+    bool openFile = true,
   }) async {
     final pdf = pw.Document();
     final font = await PdfGoogleFonts.openSansRegular();
@@ -38,10 +41,13 @@ class Text2Pdf {
       ),
     ); //
     final output = await getTemporaryDirectory();
-    var path = outputFilePath ?? "${output.path}/output.pdf";
+    var now = DateTime.now().millisecondsSinceEpoch;
+    var path = outputFilePath ?? "${output.path}/$now.pdf";
     final file = File(path);
     await file.writeAsBytes(await pdf.save()).then((value) {
-      OpenFilex.open(value.path);
+      if (openFile) {
+        OpenFilex.open(value.path);
+      }
     });
   }
 }

@@ -1,6 +1,6 @@
 name: text2pdf
-description: Convert any text to pdf file using this package !
-version: 0.0.1
+description: Convert any text to pdf file using this package ! Give any text as paramter, this package generates pdf from it and opens it
+version: 0.0.2
 homepage: https://github.com/sivaprasadnk/Text2Pdf
 
 environment:
