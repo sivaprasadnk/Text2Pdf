@@ -1,16 +1,16 @@
 name: text2pdf
 description: Convert any text to pdf file using this package ! Give any text as paramter, this package generates pdf from it and opens it
-version: 0.0.2
+version: 1.0.0
 homepage: https://github.com/sivaprasadnk/Text2Pdf
 
 environment:
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: '>=2.18.2 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  open_filex: ^4.3.1
+  open_filex: ^4.6.0
   path_provider: ^2.0.11
   pdf: ^3.8.4
   printing: ^5.9.3

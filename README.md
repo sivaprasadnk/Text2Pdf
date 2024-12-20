@@ -10,7 +10,7 @@ Add this to your package's `pubspec.yaml` file
 
 ```yaml
 dependencies:
-  text2pdf: ^0.0.2
+  text2pdf: ^1.0.0
 ```
 
 ## Usage
